@@ -3547,7 +3547,7 @@ sub nic_namecheap_update {
         verbose("UPDATE:","updating %s", $h);
 
         my $url;
-        $url   = "http://$config{$h}{'server'}/update";
+        $url   = "https://$config{$h}{'server'}/update";
 	my $domain = $config{$h}{'login'};
 	my $host = $h;
 	$host  =~ s/(.*)\.$domain(.*)/$1$2/;
